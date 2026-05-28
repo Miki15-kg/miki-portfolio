@@ -4,7 +4,9 @@ export default function Home(){
   return(
     <main>
       <MainLayout>
-        <h1>Hello, World I am Miki Kogoe</h1>
+        <h1 className='text-center text-2xl font-bold'>
+          Hello, World I am Miki Kogoe
+          </h1>
       </MainLayout>
     </main>
   );
