@@ -8,5 +8,5 @@ export default function Home(){
         <h1>Hello, World I am Miki Kogoe</h1>
       <MainFooter />
     </main>
-  )
+  );
 }
