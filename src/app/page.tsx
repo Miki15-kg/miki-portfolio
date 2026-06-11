@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <MainHeader />
        <Component/>
-      　<h1>Hello,World I am Riki Maeda</h1>
+      　<h1>Hello,World I am Miki Kogoe</h1>
        <Component/>
       <MainFooter />
     </main>
