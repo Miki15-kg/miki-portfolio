@@ -1,7 +1,7 @@
 export const MainHeader = () =>{
     return(
         <header className='bg-neutral-950 px-6 py-4 text-white'>
-            <div>
+            <div className = 'flex'>
                 <h1>Portfolio</h1>
                 <nav>
                     <a href='/about'>About</a>
