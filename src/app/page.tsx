@@ -1,15 +1,13 @@
- import { Component } from "../components/component/component";
- import { MainFooter } from "../components/layout/main/main-footer";
- import { MainHeader } from "../components/layout/main/main-header";
+import { MainLayout } from "../layouts/main/main-layout";
 
 export default function Home() {
   return (
     <main>
-      <MainHeader />
-       <Component/>
-      　<h1>Hello,World I am Miki Kogoe</h1>
-       <Component/>
-      <MainFooter />
+      <MainLayout>
+        <h1 className='text-center text-2xl font-bold'>
+          Hello,World I am Miki Kogoe.
+        </h1>
+      </MainLayout>
     </main>
   );
 }
