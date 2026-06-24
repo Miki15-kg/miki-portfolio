@@ -14,9 +14,18 @@ export default function Home() {
         <section id="skills">
           <h2 className='text-2xl font-bold text-neutral-900'>Skills</h2>
           <div className='mt-6 grid gap-4 md:grid-cols-3'>
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
+            <SkillCard 
+              title='Next.js'
+              description='ページ作成、ルーティング、コンポーネント分割を練習しています。'
+            />
+            <SkillCard
+              title='Tailwind CSS'
+              description='classNameを使って、余白、色、レイアウトを調整できます。'
+            />
+            <SkillCard
+              title='GitHub'
+              description='ブランチ、コミット、push、PR作成を練習しています。'
+            />
           </div>
         </section>
         </div>
