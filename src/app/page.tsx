@@ -1,5 +1,6 @@
 import { MainLayout } from "../layouts/main/main-layout";
-import { SkillCard } from "../components/skill-card/skill-card"
+import { SkillCard } from "../components/skill-card/skill-card";
+import { WorkCard } from "../components/work-card/work-card";
 
 const skills = [
   {
@@ -16,6 +17,19 @@ const skills = [
     description: "ブランチ、コミット、push、PR作成を練習しています。", 
   },
 ];
+
+const works = [
+  {
+    title: "Prtfolio Site",
+    description: "自分のプロフィール、スキル、制作物をまとめるサイトです。",
+    href: "#",
+  },
+  {
+    title: "Todo App",
+    description: "タスクの追加、完了、削除ができる練習用アプリです。",
+    href: "#",
+  },
+]
 
 export default function Home() {
   return (
@@ -38,6 +52,20 @@ export default function Home() {
               />
               ))}  
             </div>
+          </section>
+
+          <section id='works'>
+              <h2 className='text-2xl font-bold text-neutral-900'>Works</h2>
+              <div className='mt-6 grid gap-4 md:grid-cols-2'>
+                {works.map((work) => (
+                  <WorkCard
+                    key={work.title}
+                    title={work.title}
+                    description={work.description}
+                    href={work.href}
+                  />
+                ))}
+              </div>
           </section>
         </div>
       </MainLayout>
